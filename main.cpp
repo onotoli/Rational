@@ -102,9 +102,6 @@ istream& operator >> (istream& is, Rational& r) {
             if (c == '/') {
                 r = Rational(n, d);
             }
-            else {
-                is.setstate(ios_base::failbit);
-            }
         }
     }
 
